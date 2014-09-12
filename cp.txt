@@ -1,0 +1,5 @@
+"cp" is the copy command.
+
+It takes two parameters. The name and loaction of the file you're copying (source file)
+and the name and location of where you're copying to (target file).
+
