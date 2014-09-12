@@ -1,0 +1,24 @@
+"mv" is the move command. It can be used to move a file's location, or to rename a file. 
+You only end up with one file rather than the copy ("cp") command where you end up with two. 
+
+It takes 2 parameters. First is the orginal file name and location. Second the new file name and location.
+
+$ mv <file1> <file2>
+
+If you're in the folder you don't need to specify location. 
+e.g. $ mv oldName newName  will simply rename the file to 'newName' but keep it in the same directory path.
+
+Moving a file examples:
+
+$ mv movingFile ../movingFile  moves 'movingFile' from the current directory to the parent directory. 
+
+$ mv ../parentFile ./currentFile  moves 'parentFile' from the parent directory into the current directory.
+It also renames the file to 'currentFile' in the process. 
+
+$ mv ~/documents/coding/makers/git_revision.docx ~documents/coding/makers/revision/git_revision.docx
+
+If were in the makers dir I could execute this more simply...
+$ mv git_revision.docx ./revision/git_revision.docx
+
+If I am in the makers dir and want to create a sub dir to hold the moving file, simply reference the desired dir's path 
+in the second parameter, the command will actual create that sub dir! 
