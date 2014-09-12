@@ -1,0 +1,11 @@
+"ps" is the process command. It lists the processes running.
+
+To list all processes running on your computer use the -x flag.
+$ ps -x 
+
+To sort through the vast number of processes running on your computer and look for specific processes
+use a pipe. 
+
+E.g. $ ps -x | grep bash
+=>  40224 ttys000    0:00.28 -bash
+    40539 ttys000    0:00.00 grep bash
