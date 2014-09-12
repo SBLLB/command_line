@@ -1,0 +1,12 @@
+"grep" command allows you to search for specific words in files. 
+
+It takes two parameters - first the word you're searching for and secondly the type of file you're searching for.
+
+E.g. $ grep README .txt
+
+Often used alongside a pipe e.g.
+$ find ~ -name "*.txt" -print | grep README
+Finding any .txt files from the home directory with README in.
+
+Or,
+$ find ~ -name "*.txt" -print | grep LongText | wc –l
