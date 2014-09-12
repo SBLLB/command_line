@@ -1,0 +1,21 @@
+"wc" is the word count command
+
+It can return the word, line, character and byte count. If just $ wc typed you get the default output of 
+word / line / byte counts.. (w / l / c )
+
+e.g. wc grep.txt 
+=>  12      75     408 grep.txt
+
+Use the following switches to get specific counts.
+-w word count
+-l line count
+-c bytes
+-m character count (nb includes spaces)
+
+You can combine counts for files and wc can give you a total for each switch specified...
+E.g $ wc -mlc grep.txt cp.txt
+=>  12      75     408 grep.txt
+    5      32     184 cp.txt
+    17     107     592 total
+
+Can obviously be used to count output from pipes.
